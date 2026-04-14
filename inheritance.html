@@ -32,3 +32,36 @@
         <li>hybrid inheritance        </li>
         <li>multilevel inheritance</li>
         <li>hierarchical inheritance</li></ol>
+<h1>1.single inheritance</h1>
+  <li>when a drived class inherits from a single base class , it is known as single inheritance</li>
+  <li>The drived class  inherits all the members of it's base class and can directly access the public and protected members of the base class</li>
+  <img src="Screenshot (3).png" alt="" srcset="">
+  <h2>example</h2>
+  <ol type="1">
+    <li>#include <code>&lt;iostream.h&gt;</code></li>
+    <li>#include <code>&lt;conio.h&gt;</code></li>
+    <li>class base</li>
+    <li>{</li>
+     <li>public:</li> 
+     <li>void get()</li>
+     <li>{</li>
+    <li>cout<<"this is a base class";</li>
+    <li>}</li>
+    <li>};</li>
+    <li>class derived:public base</li> 
+    <li>{</li>
+      <li>public:</li>
+      <li>void put()</li>
+      <li>{</li>
+        <li>cout<<"this is drived class";</li>
+        <li>}</li>
+        <li>};</li>
+        <li>int main()</li>
+          <li>{</li>
+            <li>clrscr()</li>
+            <li>derived obj;</li>
+            <li>obj.get();</li>
+            <li>obj.put()</li>
+            <li>getch();</li>
+            <li>}</li>
+</ol>
