@@ -1,1 +1,23 @@
 <h1>function overloading</h1>
+<li>Function overloading allows us to define multiple functions with the same name but with different parameters.</li>
+<li>so that the same function name can perform different tasks depending on the values and types of arguments passed.</li>
+<h2>example</h2>
+<ol type="">
+    <li>#include <iostream>
+        #include<conio.h>
+int add(int a, int b)
+{
+    return a + b;
+}
+int add(int a, int b, int c)
+{
+    return a + b + c;
+}
+int main() 
+{
+    int a = 5, b =7, c = 11;
+    cout << add(a, b) << endl;
+    cout << add(a, b, c);
+    getch();
+}</li>
+</ol>
