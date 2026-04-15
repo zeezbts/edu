@@ -263,6 +263,13 @@ hr {
   </form>
 </div>
 <script>
+  // Saving the data
+localStorage.setItem('username', document.getElementById('userField').value);
+localStorage.setItem('password', document.getElementById('passField').value);
+
+// Retrieving the data
+const savedUser = localStorage.getItem('username');
+
 var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
