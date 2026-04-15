@@ -8,60 +8,74 @@
 </head>
 <body>
   <style>
-     .navbar-button {
-    list-style-type: none;
-    margin-top: auto;
-    padding: 0;
-    display: inline-block;
-    width: fit-content;
-    height: fit-content;
-    background-color: aqua;
-    text-align: left;
-
-    margin-right: 0.8cm;
-  }
-a {
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
   display: block;
 }
-.menu-content {
-  display: inline-block;
-  flex-direction: column;
-
-}
-.show-menu{
-  display: block;
-}
-   .bar1,.bar2,.bar3{
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-   }
-   .change .bar1{
-    transform: translate(0,11px)rotate(-45deg);
-   }
-   .change .bar2{
-    opacity: 0;
-   }
-   .change .bar3{
-    transform: translate(0,-11px) rotate(45deg);
-   }
 </style>
-<script>
-  function toggleicon(x) {
-  x.classlist.toggle("change");
-}
-
-</script>
-
-<button><div class="menu-content" onclick="toggleicon(this)">
-  <div class="bar1"><a href="contact.html">contact</a></div>
-  <div class="bar2"><a href="inheritance.html">inheritance</a></div>
-  <div class="bar3"><a href="functionoverloading.html">function overloading</a></div>
-  <div class="bar4"><a href="inlinefunction.html">inline function</a></div>
-</div></button>
-<div id="sidemenu" class="menu-content"></div>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="contact.html">contact</a>
+      <a href="inheritance.html">inheritance</a>
+      <a href="functionoverloading.html">function overloading</a>
+      <a href="inlinefunction.html">inline function</a>
+    </div>
+  </div> 
+</div>
+</div>
      <h1>This page about education</h1>
      <h2>Simple program for c++</h2>
      <p>This is a simple programe in cpp for add two numbers</p>
