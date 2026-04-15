@@ -253,8 +253,12 @@ hr {
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-      <button type="submit">Login</button>
+      <!-- Requires at least 8 characters, one number, and one uppercase letter -->
+<input type="password" id="psw" name="psw" 
+       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+       title="Must contain at least 8 characters, one number, and one uppercase letter" 
+       required>
+ <button type="submit">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -263,6 +267,15 @@ hr {
   </form>
 </div>
 <script>
+  function checkPassword() {
+  let pass = document.getElementById("password").value;
+  let confirmPass = document.getElementById("confirm_password").value;
+  if (pass !== confirmPass) {
+    alert("Passwords do not match!");
+    return false;
+  }
+}
+
 var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
