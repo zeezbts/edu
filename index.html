@@ -23,28 +23,32 @@
 a {
   display: flex;
 }
-.hamburger-menu {
+.bar {
   width: 35px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
-span {
-  display: block;
-  width: 100%;
   height: 5px;
-  background-color: #555;
-  border-radius: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+.menu-content {
+  display: none;
+  flex-direction: column;
+
+}
+.show-menu{
+  display: flex;
 }
 </style>
-<div class="hamburger-menu">
- <span><a href="contact.html">contact</a></span>
- <span><a href="inheritance.html">inheritance</a></span>
- <span><a href="functionoverloading.html">function overloading</a></span>
- <span><a href="inlinefunction.html">inline function</a></span>
-</div>
+<button type="button" onclick="togglemune()">
+  <div class=""bar"></div>
+  <div class=""bar"></div>
+  <div class=""bar"></div>
+</button>
+<div id=""sidemenu" class="menu-content">
+ <a href="contact.html">contact</a>
+    <a href="inheritance.html">inheritance</a>
+    <a href="functionoverloading.html">function overloading</a>
+    <a href="inlinefunction.html">inline function</a>
+  </div>
 <nav class="navbar-button" >
     <a href="contact.html">contact</a>
     <a href="inheritance.html">inheritance</a>
