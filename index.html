@@ -8,49 +8,35 @@
 </head>
 <body>
   <style>
-  .navbar-button {
-    list-style-type: none;
-    margin-top: auto;
-    padding: 0;
-    display: inline-block;
-    width: fit-content;
-    height: fit-content;
-    background-color: aqua;
-    text-align: left;
-
-    margin-right: 0.8cm;
-  }
-a {
-  display: flex;
-}
-.bar {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-}
-.menu-content {
-  display: none;
-  flex-direction: column;
-
-}
-.show-menu{
-  display: flex;
-}
+   .bar1,.bar2,.bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+   }
+   .change .bar1{
+    transform: translate(0,11px)rotate(-45deg);
+   }
+   .change .bar2{
+    opacity: 0;
+   }
+   .change .bar3{
+    transform: translate(0,-11px) rotate(45deg);
+   }
 </style>
 <script>
-  function togglemune() {
-  var menu = document.getelementbyid("sidemenu");
-  menu.classlist.toggle("show-menu");
+  function toggleicon(x) {
+  x.classlist.toggle("change");
 }
 
 </script>
 
-<button type="button" onclick="togglemune()">
-  <div class=""bar">haome</div>
-  <div class=""bar">contact</div>
-  <div class=""bar"></div>
-</button>
+<div class="menu-content" onclick="toggleicon(this)">
+  <div class=""bar1"></div>
+  <div class=""bar2"></div>
+  <div class=""bar3"></div>
+</div>
 <div id=""sidemenu" class="menu-content">
  <a href="contact.html">contact</a>
     <a href="inheritance.html">inheritance</a>
