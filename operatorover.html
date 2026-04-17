@@ -1,0 +1,57 @@
+<h1>
+    OPERATOR OVERLOADING
+</h1>
+<LI>
+    Operator overloading is a compile time polymorphism in which the operator overload to provoide the special meaning to the user defined data type
+</LI>
+<li>
+    operator overloading is used to overload most of operators available in c++
+</li>
+<li>
+    it is used to perform the ooperation on the user defined data type
+</li>
+<h2>
+    Operator that cannot be overload:
+</h2>
+<ol>
+<li>
+    scope operator(::)
+</li>
+<li>
+    size of
+</li>
+<li> member selector(.)</li>
+<li>member pointer selector(*)</li>
+<li>ternary operator(?:)</li>
+</ol>
+<h1>SYNTAX</h1>
+<li>return_type class_name operator symbol (parameter) <BR></BR>
+{ <BR></BR>
+    //body <br>
+}</li>
+<h1>EXAMPLE</h1>
+<li>
+#include<code>&lt;iostream.h&gt;</code> <br>
+#include<code>&lt;conio.h&gt;</code> <br>
+class A <br>
+{ <br>
+public: <br>
+   int x; <br>
+   A(int v=0)  <br>
+    { <br>
+        x = v; <br>
+    } <br>
+A operator+(A b) <br>
+{<br>
+   return A(x + b.x); <br>
+} <br>
+}; <br>
+void main() <br>
+{ <br>
+   clrscr(); <br>
+   A a(10), b(20), c; <br>
+   c = a + b; <br>
+   cout << c.x; <br>
+   getch(); <br>
+}
+</li>
