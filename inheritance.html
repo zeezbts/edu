@@ -132,7 +132,71 @@
 <li>When two or more types of inheritance are combined in one program. </li>
 <img src="hybrid.png" alt="" srcset="">
 <h2>syntax</h2>
+ <li>class A <br>
+ { <br>
+    members  <br>
+ }; <br>
+class B : public A <br>
+ { <br>
+    members <br>
+ }; <br>
+class C : public A  <br>
+ { <br>
+    members <br>
+ }; <br>
+class D : public B, public C  <br>
+ {<br>
+    members <br>
+ };<br>
+</li>
 <h4>example</h4>
+<li>
+#include <code>&lt;iostream.h&gt;</code> <br>
+#include <code>&lt;conio.h</code> <br>
+class Parent <br>
+{ <br>
+public: <br>
+    void parentMsg()  <br>
+    { <br>
+        cout <<"Function from Parent"; <br>
+    } <br>
+}; <br>
+class Base1 : public Parent  <br>
+{<br>
+public: <br>
+    void show1() <br>
+   { <br>
+        cout << "Inside Base1"; <br>
+    } <br>
+}; <br>
+class Base2  <br>
+{ <br>
+public: <br>
+    void show2()  <br>
+    { <br>
+        cout << "Inside Base2"; <br>
+    } <br>
+}; <br>
+class Derived : public Base1, public Base2 <br>
+{ <br>
+public: <br>
+   void display() <br>
+   { <br>
+        cout << "Inside Derived Class"; <br>
+   } <br>
+}; <br>
+void main() <br>
+ {  <br>
+    clrscr();     <br>
+    Derived d; <br>
+    d.parentMsg(); <br>
+    d.show1();     <br>
+    d.show2();   <br>
+    d.display();     <br>
+    getch(); <br>
+}    <br>
+</li>
+
 <h1>Multilevel inheritance</h1>
 <li>Multilevel inheritance in C++ means a class is derived from another derived class, forming a chain of inheritance.</li>
 <img src="multilevel.png" alt="" srcset="">
