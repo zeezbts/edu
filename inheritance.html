@@ -201,7 +201,58 @@ void main() <br>
 <li>Multilevel inheritance in C++ means a class is derived from another derived class, forming a chain of inheritance.</li>
 <img src="multilevel.png" alt="" srcset="">
 <h2>syntax</h2>
+<li>
+class BaseClass <br>
+{ <br>
+  // Base class members  <br>
+}; <br>
+class derived_class1: access_specifier BaseClass  <br>
+{ <br>
+  // Derived members <br>
+}; <br>
+class derived_class2: access_specifier baseclass2  <br>
+{ <br>
+  // Derived from IntermediateClass <br>
+}; <br>
+</li>
 <h4>example</h4>
+<li>
+#include <code>&lt;iostream.h&gt;</code> <br>
+#include <code>&lt;conio.h&gt;</code> <br>
+class baseclass <br>
+{ <br>
+public: <br>
+  void get() <br>
+   { <br>
+    cout << "Animal is eating..." << endl; <br>
+   } <br>
+}; <br>
+class derived1: public baseclass <br>
+{ <br>
+public: <br>
+  void put()  <br>
+  { <br>
+    cout << "Dog is barking..." << endl; <br>
+  } <br>
+}; <br>
+class derived2: public derived2 <br>
+{ <br>
+public: <br>
+ void out() <br>
+ { <br>
+   cout << "Puppy is weeping..." << endl; <br>
+  } <br>
+}; <br>
+void main()  <br>
+{ <br>
+  clrscr(); <br>
+  derived2 obj;<br>
+  obj.get();  <br>
+  obj.put(); <br>
+  obj.out(); <br>
+  getch();  <br>
+} <br>
+</li>
 <h1>Hierarchical inheritance</h1>
 <li>In hierarchical inheritance, more than one subclass is inherited from a single base class.
    i.e. more than one derived class is created from a single base class. </li>
