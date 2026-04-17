@@ -258,4 +258,56 @@ void main()  <br>
    i.e. more than one derived class is created from a single base class. </li>
 <img src="hecarical.png" alt="" srcset="">
 <h2>syntax</h2>
+<li>
+class Base <br>
+{ <br>
+  //body <br>
+}; <br>
+class Derived1 : public Base  <br>
+{ <br>
+  //body <br>
+}; <br>
+class Derived2 : public Base  <br>
+{ <br>
+  //body <br>
+}; <br>
+</li>
 <h4>example</h4>
+<li>
+#include <code>&lt;iostream.h&gt;</code> <br>
+#include <code>&lt;conio.h&gt;</code> <br>
+class base <br>
+{ <br>
+public: <br>
+  void get() <br>
+  {  <br>
+    cout << "base_class" << endl;  <br>
+  } <br>
+}; <br>
+class Derived1: public base <br>
+{ <br>
+public: <br>
+ void puut() <br>
+ { <br>
+  cout << "derived_class1" << endl;  <br>
+ } <br>
+};
+class derived2: public base <br> 
+{ <br>
+public:   <br>
+    void out() <br>
+ { <br>
+   cout << "derived_class2" << endl; <br>
+  } <br>
+}; <br>
+void main() <br>
+{ <br>
+    derived1 obj1; <br>
+    derived2 obj2; <br>
+    obj1.get(); <br>
+    obj1.put(); <br>
+    obj2.get(); <br>
+    obj2.out(); <br>
+    getch(); <br>
+  } <br>
+</li>
