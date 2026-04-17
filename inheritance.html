@@ -224,7 +224,7 @@ class baseclass <br>
 public: <br>
   void get() <br>
    { <br>
-    cout << "Animal is eating..." << endl; <br>
+    cout << "baseclass" << endl; <br>
    } <br>
 }; <br>
 class derived1: public baseclass <br>
@@ -232,15 +232,15 @@ class derived1: public baseclass <br>
 public: <br>
   void put()  <br>
   { <br>
-    cout << "Dog is barking..." << endl; <br>
+    cout << "derived_class1" << endl; <br>
   } <br>
 }; <br>
-class derived2: public derived2 <br>
+class derived2: public derived1 <br>
 { <br>
 public: <br>
  void out() <br>
  { <br>
-   cout << "Puppy is weeping..." << endl; <br>
+   cout << "derived_class2" << endl; <br>
   } <br>
 }; <br>
 void main()  <br>
@@ -284,7 +284,7 @@ public: <br>
     cout << "base_class" << endl;  <br>
   } <br>
 }; <br>
-class Derived1: public base <br>
+class derived1: public base <br>
 { <br>
 public: <br>
  void puut() <br>
