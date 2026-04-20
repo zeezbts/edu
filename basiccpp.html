@@ -6,19 +6,20 @@
 <h2>Subprogram Section:</h2> <li>Contains user-defined functions called by the main program.</li>
 
 <li>// 1. Documentation Section: Program to add two numbers <br> 
+    &ensp;
 #include <code>&lt;iostream.h&gt;</code>  // 2. Linking Section (Standard I/O) <br>
 #include <code>&lt;conio.h&gt;</code>    // Linking Section (Console I/O) <br>
-
-void main()     &ensp;       // 3. Main Function Section <br>
+&ensp;
+void main()     &ensp;&ensp;&ensp;// 3. Main Function Section <br>
 { <br>
-    int a, b, sum;     // Declaration Section <br>
-    clrscr();          // Clears the previous output screen <br>
+    int a, b, sum;&ensp;&ensp;&ensp;// Declaration Section <br>
+    clrscr();&ensp;&ensp;&ensp;  // Clears the previous output screen <br>
+&ensp;
+    cout << "Enter two numbers: ";&ensp;&ensp;&ensp; // Output Statement <br>
+    cin >> a >> b;  &ensp;&ensp;&ensp;&ensp;  // Input Statement <br>
+&ensp;
+    sum = a + b; &ensp;&ensp;&ensp;&ensp;&ensp; // Processing Logic <br>
+    cout << "Sum is: " << sum; &ensp;&ensp;&ensp;&ensp; // Display Result <br>
 
-    cout << "Enter two numbers: "; // Output Statement <br>
-    cin >> a >> b;                 // Input Statement <br>
-
-    sum = a + b;                   // Processing Logic <br>
-    cout << "Sum is: " << sum;     // Display Result <br>
-
-    getch();           // Holds the output screen until a key is pressed <br>
+    getch(); &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; // Holds the output screen until a key is pressed <br>
 } </li>
