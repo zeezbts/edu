@@ -1,0 +1,142 @@
+<h1>Constructors in C++</h1>
+
+<li>Constructors are special methods that are automatically called whenever an object of a class is created. <br>
+     A constructor is different from normal functions in following ways: </li> <br>
+
+<li>A constructor has same name as the class itself</li><br>
+<li>Don't have return typer <br></li>
+<li>Automatically called when an object is created. <br></li>
+<li>If we do not specify a constructor, C++ compiler generates a default constructor for  <br></li>
+
+
+<h1>Types of Constructors in C++</h1>
+<li>There are 3 types of constructors in C++: <br></li>
+<ol type="1">
+<li>Default Constructor</li>
+<li>Parameterized Constructor</li>
+<li>Copy Constructor</li>
+</ol>
+
+<h1>1. Default Constructor</h1>
+<li>A default constructor is automatically created by the compiler if no constructor is defined. It takes no arguments and initializes members with default values, and it is not generated if the programmer defines any constructor.</li>
+
+<h2>syntax:</h2>
+<ul>
+<li>class ClassName <br>
+{ <br>
+public: <br>
+    ClassName() <br>
+    { <br>
+        // body <br>
+    } <br>
+};</li>
+</ul>
+<h1>example</h1>
+<ul><li>
+#include <code>&lt;iostream.h&gt;</code><br>
+#include <code>&lt;conio.h&gt;</code> <br>
+class Demo <br>
+{ <br>
+    int num; <br>
+public: <br>
+    Demo() <br>
+    { <br>
+        num = 10;  <br>
+        cout << "Default Constructor Called!" << endl; <br>
+    } <br>
+    void display() <br>
+    {<br>
+        cout << "Value of num: " << num << endl;<br>
+        
+    }<br>
+};<br>
+void main()<br>
+{<br>
+    clrscr(); <br>
+    Demo d; <br>
+    d.display();<br>
+    getch(); <br>
+}</li>
+</ul>
+
+<h1>2. Parameterized Constructor</h1>
+<li>A parameterized constructor lets us pass arguments to initialize an object's members. </li>
+   <li>It is created by adding parameters to the constructor and using them to set the values of the data members.</li>
+
+
+<h2>syntax</h2>
+<li>class ClassName <br>
+{ <br>
+public: <br>
+    ClassName(type parameter1, type parameter2, ...) <br>
+    { <br>
+        //body <br>
+    }<br> 
+};<br>
+</li>
+
+<h2>>example</h2>
+<li>
+#include <code>&lt;iostream.h&gt;</code><br>
+#include <code>&lt;conio.h&gt;</code><br>
+class point <br>
+{ <br>
+    int x, y;<br>
+public:<br>
+    Point(int x1, int y1)<br>
+    {<br>
+        x = x1;<br>
+        y = y1;<br>
+    }<br>
+    void display()<br>
+    {<br>
+        cout << "Point: (" << x << ", " << y << ")" << endl;<br>
+    }<br>
+};<br>
+void main() <br>
+{<br>
+    clrscr(); <br>
+    Point p1(10, 20); <br>
+    p1.display(); <br>
+    getch(); <br>
+}
+</li>
+
+<h1>3. Copy Constructor</h1>
+<li>A copy constructor is a member function that initializes an object using another object of the same class.</li>
+<li>Copy constructor takes a reference to an object of the same class as an argument</li>
+
+<h2>syntax</h2>
+<li>
+ClassName(const ClassName &obj) <br>
+{ <br>
+    // Body <br>
+} <br>
+</li>
+
+<h2>example</h2>
+<li>
+#include<code>&lt;iostream.h&gt;</code><br>
+#include<code>&lt;conio.h&gt;</code><br>
+class Student <br>
+{<br>
+    int roll;<br>
+public:<br>
+    Student()<br>
+    {<br>
+        roll = 101; <br>
+        cout << "Default Constructor Called!" << endl;<br>
+    }<br>
+void show() {<br>
+        cout << "Roll Number: " << roll << endl;<br>
+    }<br>
+};<br>
+void main() <br>
+{ <br>
+    clrscr();<br>
+    Student s1; <br>
+    s1.show();<br>
+    getch();<br>
+}<br>
+
+</li>
