@@ -1,0 +1,47 @@
+<style>
+
+</style>
+<body>
+ <h1>Destructor:</h1>   
+<ol>
+    <li>Like a constructor, a destructor is also special, as it has the same name as the class of which it is a member, but with a tilde (~) prefixed to its name.</li></ol>
+<h2>syntax:</h2>
+ <ol>
+    <li>class class_name <br>
+{ <br>
+  public:  <br>
+      ~class_name() <br>
+        { <br>
+           body; <br>
+        } <br>
+};</li>
+<h2>
+    Example
+</h2>
+<li>
+#include <code>&lt;iostream.h&gt;</code><br>
+#include <code>&lt;conio.h&gt;</code> <br>
+class Sample <br>
+{ <br>
+public: <br>
+    Sample() <br>
+    { <br>
+        cout << "Object Created" << endl; <br>
+    } <br>
+    ~Sample()  <br>
+    { <br>
+        cout << "Object Destroyed" << endl; <br>
+    } <br>
+}; <br>
+void main() <br>
+{ <br>
+    clrscr(); <br>
+    { <br>
+        Sample obj; <br>
+    }     <br>
+    getch(); <br>
+} <br>
+</li>
+ </ol>
+
+</body>
