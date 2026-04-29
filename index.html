@@ -129,6 +129,44 @@
 .navbar a:hover, .drop:hover .dropbtn {
   background-color: red;
 }
+.down-unit2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.down-unit2 a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.down-unit2 a:hover {
+  background-color: #ddd;
+}
+.down:hover .down-unit2 {
+  display: block;
+}
+
+.down .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+.navbar a:hover, .doen:hover .dropbtn {
+  background-color: red;
+}
+
 </style>
 <div class="navbar">
   <a href="home.html">HOME</a>
@@ -143,16 +181,23 @@
       <a href="inlinefunction.html">Inline function</a>
   </div> 
 </div>
+    <div class="down">
+    <button class="dropbtn">UNIT2
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="down-unit2">
+      <a href="basiccpp.html">Basic structure c++</a>
+      <a href="constructor.html">Constructors</a>
+      <a href="destructor.html"> Destructor</a>
+  </div> 
+</div>
      <div class="dropdown">
-    <button class="dropbtn">CONTENT
+    <button class="dropbtn">UNIT3
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="inheritance.html">Inheritance</a>
       <a href="operatorover.html">Operator overloading</a>
-      <a href="basiccpp.html">Basic structure c++</a>
-      <a href="constructor.html">Constructors</a>
-      <a href="destructor.html"> Destructor</a>
     </div>
     </div>
 </div>
