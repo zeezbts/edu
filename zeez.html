@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEEZ - Pro Coder Animation</title>
+    <style>
+        body {
+            background-color: #0d1117; /* GitHub Dark Theme Color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .terminal-container {
+            text-align: center;
+        }
+
+        /* The Typing Effect */
+        .coder-text {
+            font-size: 5rem;
+            color: #2ea043; /* Success Green */
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            border-right: 4px solid #58a6ff; /* Blinking Cursor */
+            white-space: nowrap;
+            letter-spacing: 5px;
+            animation: 
+                typing 3.5s steps(10, end) infinite,
+                blink-caret 0.75s step-end infinite;
+        }
+
+        /* Pseudo-element for Code Tags */
+        .coder-text::before {
+            content: '<';
+            color: #ff7b72; /* Red Tag color */
+        }
+
+        .coder-text::after {
+            content: ' />';
+            color: #ff7b72;
+        }
+
+        /* Background code matrix effect */
+        .bg-code {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: rgba(46, 160, 67, 0.05);
+            font-size: 14px;
+            z-index: -1;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        /* Animations */
+        @keyframes typing {
+            0% { width: 0 }
+            50% { width: 100% }
+            100% { width: 0 }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #58a6ff; }
+        }
+
+        .tagline {
+            color: #8b949e;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-code">
+        &lt;div&gt; &lt;section&gt; &lt;main&gt; padding: 20px; border-radius: 50%; color: aqua; flex-direction: column; justify-content: center; align-items: center; &lt;/main&gt; &lt;/section&gt; &lt;/div&gt;
+        <br> console.log("ZEEZ is coding..."); function init() { return "Pro Coder"; }
+    </div>
+
+    <div class="terminal-container">
+        <div class="coder-text">ZEEZ</div>
+        <div class="tagline">The HTML Master</div>
+    </div>
+
+</body>
+</html>
