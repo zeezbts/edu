@@ -1,7 +1,59 @@
 <style>
-    .insta {
-     background-color: aqua;
+    /* Professional Card Styling */
+    .contact-card {
+        background: white;
+        max-width: 320px;
+        margin: 20px auto;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .insta-logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .insta-id {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #262626;
+        margin-bottom: 20px;
+    }
+
+    /* Gradient Button - Professional Instagram Look */
+    .insta-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 30px;
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+    }
+
+    .insta-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(220, 39, 67, 0.4);
+        color: white;
     }
 </style>
-<h2>insta id : z___e_e___z</h2>
-<button class="insta" ><a href="https://www.instagram.com/z___e_e___z?igsh=ZnlkczZ5Y25mbWll">click here</a></button>
+
+<div class="contact-card">
+    <!-- Instagram Icon from a reliable CDN -->
+    <img class="insta-logo" src="https://wikimedia.org" alt="Instagram">
+    
+    <span class="insta-id">@z___e_e___z</span>
+    
+    <a href="https://www.instagram.com/z___e_e___z?igsh=ZnlkczZ5Y25mbWll" class="insta-btn" target="_blank">
+        Follow Me
+    </a>
+</div>
